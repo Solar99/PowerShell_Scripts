@@ -1,0 +1,1 @@
+﻿register-wmiEvent -query "select * from __instancecreationevent within 5 where targetinstance isa 'Win32_Process' and targetinstance.name='Microsoft Word 2010.lnk'" -sourceIdentifier "ProcessStarted" -Action { Write-Host "Microsoft Word запущен" } 

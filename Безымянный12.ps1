@@ -1,0 +1,1 @@
+﻿gwmi Win32_PingStatus -Filter "Address = '8.8.8.8'"

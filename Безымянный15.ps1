@@ -1,0 +1,1 @@
+﻿register-wmiEvent -query "select * from __instancecreationevent within 5 where targetinstance isa 'Win32_Process' and targetinstance.name='notepad.exe'" -sourceIdentifier "ProcessStarted3" -Action { Write-Host "Microsoft Word запущен" } 

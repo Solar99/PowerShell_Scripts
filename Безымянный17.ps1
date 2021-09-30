@@ -1,0 +1,1 @@
+﻿Invoke-Command -ScriptBlock{ Get-Process -Name notepad | %($_.kill())} -ComputerName 172.19.154.194 -Credential администратор
